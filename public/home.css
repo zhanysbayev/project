@@ -1,0 +1,70 @@
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    margin: 0px;  
+    overflow: scroll;
+}
+body::-webkit-scrollbar {
+    display: none;
+}  
+.bg-image{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(https://image.freepik.com/free-photo/men-s-business-fashion-outfit-flatlay-dark-background_9515-92.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 755px;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px 0px 680px;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 0px; 
+    right: 0px;
+} 
+.menu a{
+    text-decoration: none; 
+    padding: 5px 20px;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: white;
+}
+.menu #about:hover, #contact:hover {
+    color: rgb(247, 12, 12);
+    
+}
+#home{
+    color:    rgb(247, 12, 12);
+    cursor: context-menu;
+}
+
+.text_on_img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.text_on_img #p1, #h11{
+    color: white;
+    text-align: center;
+
+
+}
+#p1{
+    font-size: 50px;
+    letter-spacing: 4px;
+}
+#h11{
+    font-size: 55px;
+    padding-bottom: 5px;
+    letter-spacing: 10px;
+}
+
+
+
+
+
+
