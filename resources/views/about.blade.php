@@ -5,16 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('about.css') }}">
-    <title>PROJECT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>ABOUT</title>
+    <link rel="shortcut icon" href="https://free-icon-rainbow.com/i/icon_02483/icon_024830_256.jpg">
 </head>
 <body>
+
 <div class="full">
    <div class="header" id="header">
 
        <div class="bg-color"><div class="page2">
-
 <div class="mid" id="mid">
-<p id="mid_p">The difference between style and fashion is <span style="color:  rgb(247, 12, 12); font-weight:bold">quality</span>.</p>
+<p id="mid_p">{{__('customlang.difference')}} <span style="color:  rgb(247, 12, 12); font-weight:bold">{{__('customlang.quality')}}</span>.<br>
+{{__('customlang.wecan')}} <span style="color:  rgb(247, 12, 12); font-weight:bold"> {{__('customlang.everything')}} </span>{{__('customlang.youwant')}} <span style="color:  rgb(247, 12, 12); font-weight:bold"> {{__('customlang.ord')}} </span> {{__('customlang.fromus')}} </p>
+
 </div>
 
 <div class="row1">
@@ -26,9 +30,9 @@
     </div>
 
     <div class="info">
-        <h1>Tie</h1>
-        <p id="info_p">You’ll train all major bodyparts in each workout (as opposed to “splitting up” your training). Train three days this first week, performing just one exercise per bodypart in each session.
-            <br><a class="discover1" href="https://www.muscleandfitness.com/workout-plan/workouts/workout-routines/complete-mf-beginners-training-guide-plan/">Discover more</a></br>
+        <h1>{{__('customlang.tie')}}</h1>
+        <p id="info_p">{{__('customlang.tietxt')}}
+            <br><a class="buy1" href="{{ route('add-order') }}">{{__('customlang.buy')}}</a></br>
         </p>
     </div>
 
@@ -42,9 +46,9 @@
     </div>
 
     <div class="info">
-        <h1>Bow tie</h1>
-        <p id="info_p">Each goal involves lifting heavy things and eating the right foods, but the details are a little bit different. Here’s a primer to maximize your desired results.
-            <br><a class="discover2" href="https://www.mensjournal.com/health-fitness/how-build-muscle-basic-guide-beginners-0/">Discover more</a></br>
+        <h1>{{__('customlang.bowtie')}}</h1>
+        <p id="info_p">{{__('customlang.bowtxt')}}
+            <br><a class="buy2" href="{{ route('add-order') }}">{{__('customlang.buy')}}</a></br>
         </p>
     </div>
 
@@ -61,9 +65,9 @@
     </div>
 
     <div class="info">
-        <h1>Glasses</h1>
-        <p id="info_p">This workout isn’t too difficult; though, for those new to health and fitness, it will certainly prove challenging. First of all you should pass Basic Fitness Course.
-            <br><a class="discover3" href="https://www.lifehack.org/688549/the-ultimate-workout-routines-for-men">Discover more</a></br>  
+        <h1>{{__('customlang.glasses')}}</h1>
+        <p id="info_p">{{__('customlang.glastxt')}}
+            <br><a class="buy3" href="{{ route('add-order') }}">{{__('customlang.buy')}}</a></br>  
         </p>
     </div>
 
@@ -77,9 +81,9 @@
     </div>
 
     <div class="info">
-        <h1>Shoes</h1>
-        <p id="info_p">So, you’re practicing yoga and feeling the amazing changes that it brings.  You’re part of an great community of people and feeling stronger, more flexible and centered.
-            <br><a class="discover4" href="https://feelbetteryoga.com/blog/yoga-teacher-training-guide">Discover more</a></br>  
+        <h1>{{__('customlang.shoes')}}</h1>
+        <p id="info_p">{{__('customlang.shoestxt')}}
+            <br><a class="buy4" href="{{ route('add-order') }}">{{__('customlang.buy')}}</a></br>  
         </p>
     </div>
 
@@ -96,10 +100,9 @@
         </div>
 
         <div class="info">
-            <h1>Suit</h1>
-            <p id="info_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Incidunt accusantium perspiciatis, voluptas explicabo unde praesentium 
-                <br><a class="discover4" href="https://feelbetteryoga.com/blog/yoga-teacher-training-guide">Discover more</a></br> </p>
+            <h1>{{__('customlang.suit')}}</h1>
+            <p id="info_p">{{__('customlang.suittxt')}}
+                <br><a class="buy5" href="{{ route('add-order') }}">Buy</a></br> </p>
                 
         </div>
 
@@ -113,10 +116,9 @@
         </div>
 
         <div class="info">
-            <h1>Hat</h1>
-            <p id="info_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Incidunt accusantium perspiciatis, voluptas explicabo unde praesentium 
-                <br><a class="discover4" href="https://feelbetteryoga.com/blog/yoga-teacher-training-guide">Discover more</a></br></p>
+            <h1>{{__('customlang.hat')}}</h1>
+            <p id="info_p">{{__('customlang.hattxt')}}
+                <br><a class="buy6" href="{{ route('add-order') }}"id="order">Buy</a></br></p>
              
         </div>
 
@@ -125,13 +127,53 @@
     </div>
 </div>
         <div class="menu"> 
-            <a href="{{ route('home') }}" id="home">HOME</a>
-            <a href="{{ route('about') }}" id="about">ABOUT</a>
-            <a href="{{ route('contact') }}" id="contact">CONTACT</a>
+            <a href="{{ route('home') }}" id="home">{{__('customlang.home')}}</a>
+            <a href="{{ route('about') }}" id="about">{{__('customlang.about')}}</a>
+            <div class="language">
+                <a href="lang/en">{{__('customlang.en')}}</a>
+                <a href="lang/ru">{{__('customlang.ru')}}</a>
+                <a href="lang/kz">{{__('customlang.kz')}}</a>
+            </div>
         </div> 
     </div> 
     </div>    
-</div>     
+</div> 
+<div class="footer">
+    <div class="footer_text">
+            <div class="links">
+                <div class="title1">
+                    <h5>{{__('customlang.links')}}</h5>
+                </div>
+                <div class="title1_content">
+                    <a class="home" href="{{ route('home') }}">{{__('customlang.home')}}</a>
+                    <a class="about" href="{{ route('about') }}">{{__('customlang.about')}}</a>
+                    <a class="order" href="{{ route('add-order') }}">{{__('customlang.order')}}</a>
+                </div>
+            </div>
+
+            <div class="contacts">
+                <div class="title2">
+                    <h5>{{__('customlang.contacts')}}</h5>
+                </div>
+                <div class="title2_content">
+                    <address class="fa" id="ad">&#xf015;{{__('customlang.address')}}</address>
+                    <div class="gmail"> <a class="email" href="{{ route('email') }}" target="_blank"><p class="fa" >&#xf003; {{__('customlang.email')}}</p></a></div>
+                    <div class="num"><p class="fa">&#xf095; {{__('customlang.num')}}</p></div>
+                </div>
+            </div>
+
+            <div class="socials">
+                <div class="title3">
+                    <h5>{{__('customlang.socials')}}</h5>
+                </div>
+                <div class="title3_content">
+                    <a href="https://www.instagram.com/_zhanysbayev_/" class="fa">&#xf16d; _zhanysbayev_</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    
+
     
 </body>
 </html>

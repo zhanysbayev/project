@@ -1,0 +1,55 @@
+<?php
+
+return [
+
+    'home' => 'HOME',
+    'about' => 'ABOUT',
+    'en' => 'EN |',
+    'ru' => 'RU |',
+    'kz' => 'KZ',
+    'txt' => 'Order from us and be success.',
+    'easywith' => 'EASY WITH OUR',
+    'store' => 'STORE',
+    'shop' => 'SHOP NOW',
+    'links' => 'LINKS',
+    'order' => 'ORDER',
+    'contacts' => 'CONTACTS',
+    'address' => 'Address',
+    'email' => 'Email',
+    'num' => 'Phone number',
+    'socials' => 'SOCIALS',
+    'difference' => 'The difference between style and fashion is ',
+    'quality' => 'quality',
+    'wecan' => 'We can find',
+    'everything' => 'everything ',
+    'youwant' => 'you want. Just ',
+    'ord' => ' order ',
+    'fromus' => ' from us.',
+    'tie' => 'Tie',
+    'tietxt' => 'Necktie, a long piece of cloth worn around the neck or shoulders',
+    'bowtie' => 'Bow Tie',
+    'bowtxt' => 'Type of necktie. A modern bow tie is tied using a common shoelace knot, which is also called the bow knot for that reason.',
+    'glasses' => 'Glasses',
+    'glastxt' => 'Glasses worn to protect the eyes from sunlight and ultraviolet rays.',
+    'shoes' => 'Shoes',
+    'shoestxt' => 'A shoe is an item of footwear intended to protect and comfort the human foot.',
+    'suit' => 'Suit',
+    'suittxt' => 'A suit is a set of mens or womens clothes comprising a suit jacket, or coat, and trousers.',
+    'hat' => 'Hat',
+    'hattxt' => 'A head covering which is worn for various reasons, safety, or as a fashion accessory.',
+    'buy' => 'Buy',
+    'hello' => 'Hello!',
+    'ifqs' => 'If you want to order, fill the blank.',
+    'name' => 'Name',
+    'entername' => 'Enter your name.',
+    'prodid' => 'Product id',
+    'enterid' => 'Enter if id of product',
+    'size' => 'Size',
+    'entersize' => 'Enter your size.',
+    'upload' => 'Upload photo of your item.',
+    'createorder' => 'Create order'
+
+
+
+
+];

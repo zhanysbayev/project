@@ -1,6 +1,14 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\DB;
+
+use App\Models\Order;
+use App\Models\Product;
+
+use App\Http\Controllers\OrderController;
+
+use App\Http\Controllers\MailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,3 +33,25 @@ Route::get('/about', function () {
 Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
+Route::get('order', [OrderController::class, 'index']);
+Route::get('order/create', function() {
+    return view('order.create');
+});
+Route::post('order/create', [OrderController::class, 'store'])->name('add-order');
+
+Route::get('mail/send', [MailController::class, 'send'])->name('email');
+
+
+Route::get('lang/{locale}', function ($locale) {
+    session()->put('locale', $locale);
+    return redirect()->back();
+});
+
+Route::get('product/add', function(){
+    DB::table('products')->insert([
+        'name'=> ' Tie',
+        'price' => '10',
+        'size' => 'regular'
+
+    ]);
+});

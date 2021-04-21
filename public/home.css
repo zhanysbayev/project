@@ -1,70 +1,244 @@
 html {
     scroll-behavior: smooth;
-  }
-body{
-    margin: 0px;  
+}
+
+body {
+    margin: 0px;
     overflow: scroll;
 }
+
 body::-webkit-scrollbar {
     display: none;
-}  
-.bg-image{
-    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(https://image.freepik.com/free-photo/men-s-business-fashion-outfit-flatlay-dark-background_9515-92.jpg);
+}
+
+.bg-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(https://i.pinimg.com/originals/ae/65/3b/ae653b9dd73d1ebd1879a2e58f15ac8f.jpg);
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; 
+    background-position: right;
+    background-repeat: no-repeat;
     height: 755px;
 }
-.menu{
+
+.menu {
     display: flex;
     justify-content: space-between;
-    padding: 15px 40px 0px 680px;
+    padding: 15px 30px 0px 900px;
     align-items: center;
     position: absolute;
     top: 0px;
-    left: 0px; 
+    left: 0px;
     right: 0px;
-} 
-.menu a{
-    text-decoration: none; 
+}
+
+.menu a {
+    text-decoration: none;
     padding: 5px 20px;
     text-transform: uppercase;
     font-size: 20px;
     color: white;
 }
-.menu #about:hover, #contact:hover {
-    color: rgb(247, 12, 12);
-    
+
+.language a {
+    padding-right: 0px;
+    padding-left: 0px;
 }
-#home{
-    color:    rgb(247, 12, 12);
+
+.menu #about:hover,
+#contact:hover {
+    color: rgb(247, 12, 12);
+
+}
+
+#home {
+    color: rgb(247, 12, 12);
     cursor: context-menu;
 }
 
-.text_on_img{
+.text_on_img {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    left: 35%;
+    transform: translate(-50%, -50%);
 }
-.text_on_img #p1, #h11{
+
+.text_on_img #p1,
+#h11 {
     color: white;
-    text-align: center;
+    text-align: left;
 
 
 }
-#p1{
-    font-size: 50px;
+
+#p1 {
+    font-size: 35px;
     letter-spacing: 4px;
 }
-#h11{
-    font-size: 55px;
+
+#h11 {
+    font-size: 40px;
     padding-bottom: 5px;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
 }
 
+#btn1 {
+    font-size: 30px;
+    color: white;
+    background-color: none;
+}
 
+.footer {
+    background-color: black;
+    height: 300px;
+    padding: 0 230px 0 300px;
+}
 
+.footer_text {
+    padding-top: 45px;
+    display: flex;
+    justify-content: space-between;
+}
 
+.links {
+    margin-left: 120px;
+    margin-top: 0px;
+}
 
+.title1,
+.title2,
+.title3 h5 {
+    color: rgb(247, 12, 12);
+    text-decoration: underline;
+    font-size: 20px;
+}
 
+.about,
+.order {
+    margin-top: 10px;
+}
+
+.email {
+    color: white;
+}
+
+.gmail {
+    margin-top: 2px;
+}
+
+.num {
+    margin-top: -17px;
+
+}
+
+.title3 h5 {
+    font-size: 17px;
+}
+
+.title1_content,
+.title2_content,
+.title3_content {
+    display: flex;
+    flex-direction: column;
+}
+
+.title1_content a,
+.title2_content,
+.title3_content a {
+    padding: 2px;
+    text-decoration: none;
+    color: white;
+}
+
+.title1_content a:hover,
+.title3_content a:hover,
+.email:hover {
+    color: rgb(247, 12, 12);
+}
+
+#ad {
+    margin-top: 0px;
+}
+.user_profile{
+    position: fixed;
+    top: 700px;
+    right: 5px;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    z-index: 1;
+    display: none;
+}
+
+#profile_img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline;
+}
+
+#user_name{
+    margin: 0;
+    padding: 10px;
+    display: inline;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.popup2{
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 25;
+    display: none;
+}
+.popup-content2{
+    background-color: white;
+    height: 300px;
+    width: 500px;
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center; 
+}
+#username2, #pass{
+    display: block;
+    margin: 20px auto;
+    width: 50%;
+    padding: 8px;
+}
+.closed2{
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    cursor: pointer;
+}
+#bt2{
+    color: white;
+    background-color:  rgb(247, 12, 12);
+    text-align: center;
+    border: none;
+    padding: 10px 25px; 
+    margin-right: 20px;
+    font-size: 15px;
+}
+#bt2:hover{
+    cursor: pointer;
+    color: black;
+}
+#bt1{
+    background: none;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 7px 40px;
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    color: #000;
+
+}
+#bt1:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor:pointer;
+}
